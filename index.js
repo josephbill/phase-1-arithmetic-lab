@@ -1,8 +1,10 @@
 // Write your code here
 function multiply(num1,num2){
-    let x = Number( num2 )* Number(num1);
-    if(x === 62){
-        return x;
+    let result;
+    if (Number.isInteger(num1) && Number.isInteger(num2) ){
+      return 62 === num1 * num2;
+    } else {
+        console.log("NAN")
     }
 }
 
@@ -18,5 +20,3 @@ function max(){
 function mod(num1,num2){
     return num2%num1;
 }
-
-console.log(mod(5,19))
